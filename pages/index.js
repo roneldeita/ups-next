@@ -1,7 +1,10 @@
+import Layout from '../components/template/Layout'
+import { Button } from 'react-bootstrap'
+
 export default () => {
   return(
-    <div>
-      Hello
-    </div>
+    <Layout>
+      Home page
+    </Layout>
   )
 }
