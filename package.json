@@ -1,0 +1,18 @@
+{
+  "name": "unified.ph",
+  "version": "1.0.0",
+  "description": "Unified Website using Next.js Framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Ronel A. Deita",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^5.1.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  }
+}
