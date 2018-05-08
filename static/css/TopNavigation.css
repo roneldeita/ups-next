@@ -1,0 +1,31 @@
+.logo{
+  padding: 5px !important;
+}
+.login_button{
+  font-size: 12px !important;
+  color: black !important;
+  font-weight: 500 !important;
+  margin-top: -3px !important;
+  padding: 3px 30px !important;
+  border-radius: 50px !important;
+  border:none !important;
+}
+.navbar_default{
+  background-image: none !important;
+  background-color: transparent !important;
+  border:none !important;
+  border-bottom: 1px solid #ffffff !important;
+  -webkit-transition: background-color 1s !important;
+  transition: background-color 1s !important;
+}
+.navbar_default:hover,
+.navbar_active{
+  background-color: #191D21 !important;
+  border-bottom: 0px solid #ffffff !important;
+  -webkit-transition: background-color 1s !important;
+  transition: background-color 1s !important;
+}
+.space{
+  display: inline-block !important;
+  width:50px !important;
+}

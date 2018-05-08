@@ -1,10 +1,12 @@
 import Layout from '../components/template/Layout'
-import { Button } from 'react-bootstrap'
+//import Banner from '../components/home/Banner'
+
+import css from '../static/css/Home.css'
 
 export default () => {
   return(
     <Layout>
-      Home page
+      <div className={css.cover_container}></div>
     </Layout>
   )
 }
