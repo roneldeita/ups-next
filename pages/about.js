@@ -1,5 +1,8 @@
+import Layout from '../components/template/Layout'
 export default () => {
   return(
-    <p>About</p>
+    <Layout>
+      <p>About</p>
+    </Layout>
   )
 }

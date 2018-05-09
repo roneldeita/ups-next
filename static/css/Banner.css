@@ -1,4 +1,4 @@
-.slogan_container{
+.slogan-container{
   margin-top: 120px;
 }
 .slogan{
@@ -7,14 +7,14 @@
   font-family: 'DharmaGothicLight', sans-serif;
   color: #ffffff;
 }
-.slogan_sub{
+.slogan-sub{
   font-weight: 200;
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 20px;
   font-size: 16px;
 }
-.btn_learn_more{
+.btn-learn-more{
   background-color: transparent !important;
   border:1px solid #ffffff;
   padding: 4px 55px;

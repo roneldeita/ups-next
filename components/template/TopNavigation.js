@@ -1,65 +1,75 @@
 import React from 'react'
-//import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Button } from 'react-bootstrap'
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+import Link from 'next/link'
 import css from '../../static/css/TopNavigation.css'
+import jQ from 'jquery'
 
 class TopNavigation extends React.Component{
   constructor(props){
     super(props)
-    this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
-    };
+      navClass:"navbar-default"
+    }
   }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll.bind(this))
+    jQ('#navbar-collapse>.navbar-nav>li>a').on('click', function(){
+      if(jQ(window).width() <= 768) {
+        jQ('.navbar-toggler').click()
+      }
+    })
+  }
+  handleScroll(){
+    var scroll = window.pageYOffset;
+    const Navclass = scroll <= 50 ? 'navbar-default' : 'navbar-default-active';
+    this.setState({navClass:Navclass})
   }
   render(){
+  //  console.log(this)
     return(
-      <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
-        </Navbar>
+      <div className={`container-fluid fixed-top ${this.state.navClass}`}>
+        <div className="container">
+          <div className="row justify-content-md-center">
+            <div className="col-md-10">
+              <nav className="navbar navbar-expand-lg navbar-light" style={{padding:'0px'}}>
+                <a className="navbar-brand" href="#">
+                  <img src="/static/images/UPS_Logo.png" alt="logo" className="logo"/>
+                </a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                      <a className="nav-link">HOME</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link">PRODUCTS & SERVICES</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link">BLOG</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link">ABOUT</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link">EVENTS</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link">CONTACTS</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link space"></a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="btn login-button" target="_blank" href="https://secure.unified.ph">Login</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 }
