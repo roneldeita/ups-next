@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import css from '../../static/css/Banner.css'
+import Router from 'next/router'
+import css from '../../static/css/banner.css'
 
 export default() => {
   return(
@@ -7,7 +7,7 @@ export default() => {
       <div className="row justify-content-md-center">
         <div className="col-md-5">
           <div className="slogan-container">
-            <p className="slogan">
+            <p className="slogan slogan-home">
               We empower you<br/>
               to build the future<br/>
               you deserve!
@@ -19,9 +19,7 @@ export default() => {
               attaining financial freedom through
               our one-stop-shop business.
             </p>
-            <Link href="/about">
-              <button className="btn btn-learn-more">Learn More</button>
-            </Link>
+            <button className="btn btn-learn-more" onClick={() => Router.push('/about')}>Learn More</button>
           </div>
         </div>
         <div className="col-md-5">

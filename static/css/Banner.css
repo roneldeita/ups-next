@@ -1,11 +1,44 @@
-.slogan-container{
-  margin-top: 120px;
+.cover{
+  min-height: 570px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.home-cover{
+  background-image: url('/static/images/Header_Image-01.jpg');
+}
+.about-cover{
+  background-image: url('/static/images/Header_Image_About-01.jpg');
+}
+.products-and-services-cover{
+  background-image: url('/static/images/Header_Image_Products-01.jpg')
+}
+.events-cover{
+  background-image: url('/static/images/Events.png');
+}
+.contact-cover{
+  background-image: url('/static/images/Contact_Header.png');
 }
 .slogan{
   font-size: 60px;
   line-height: 60px;
   font-family: 'DharmaGothicLight', sans-serif;
   color: #ffffff;
+}
+.slogan-home{
+  margin-top: 120px;
+}
+.slogan-about{
+  margin-top: 220px;
+}
+.slogan-products-and-services{
+  margin-top: 220px;
+}
+.slogan-events{
+  margin-top: 220px;
+}
+.slogan-contact{
+  margin-top: 220px;
 }
 .slogan-sub{
   font-weight: 200;
@@ -20,4 +53,12 @@
   padding: 4px 55px;
   color: #ffffff !important;
   border-radius: 15px;
+}
+.btn-signup-circular{
+  background-color: #F7931E !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  padding: 10px 40px 10px 40px !important;
+  color: #ffffff !important;
+  border-radius: 50px;
 }

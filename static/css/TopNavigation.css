@@ -56,3 +56,14 @@
   display: inline-block !important;
   width:80px !important;
 }
+@media (min-width:100px) and (max-width: 992px) {
+  .navbar-nav {
+    display: inline-block !important;
+    float: none !important;
+    vertical-align: top !important;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center !important;
+  }
+}

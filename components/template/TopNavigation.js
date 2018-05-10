@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
-import css from '../../static/css/TopNavigation.css'
+import { withRouter } from 'next/router'
+import css from '../../static/css/topnavigation.css'
 import jQ from 'jquery'
 
 class TopNavigation extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      navClass:"navbar-default"
+      navClass:"navbar-default",
+      toggleIcon:"fas fa-chevron-down"
     }
   }
   componentDidMount(){
@@ -17,14 +19,22 @@ class TopNavigation extends React.Component{
         jQ('.navbar-toggler').click()
       }
     })
+    let parent = this;
+    jQ('.navbar-toggler').on('click', function(){
+      const State = jQ('.navbar-collapse').hasClass('show')
+      const Class = State ? "fas fa-chevron-down" : "fas fa-chevron-up"
+      parent.setState({toggleIcon:Class})
+    })
   }
   handleScroll(){
     var scroll = window.pageYOffset;
     const Navclass = scroll <= 50 ? 'navbar-default' : 'navbar-default-active';
     this.setState({navClass:Navclass})
   }
+  setActive(path){
+    return path === this.props.router.pathname ? 'active' : ''
+  }
   render(){
-  //  console.log(this)
     return(
       <div className={`container-fluid fixed-top ${this.state.navClass}`}>
         <div className="container">
@@ -35,32 +45,42 @@ class TopNavigation extends React.Component{
                   <img src="/static/images/UPS_Logo.png" alt="logo" className="logo"/>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span className="navbar-toggler-icon"></span>
+                  <span className={this.state.toggleIcon} style={{color:'white'}}></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <a className="nav-link">HOME</a>
+                      <Link prefetch href="/" passHref>
+                        <a className={`nav-link ${this.setActive("/")}`}>HOME</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link">PRODUCTS & SERVICES</a>
+                      <Link prefetch href="/products-and-services" passHref>
+                        <a className={`nav-link ${this.setActive("/products-and-services")}`}>PRODUCTS & SERVICES</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link">BLOG</a>
+                      <a href="http://blog.unified.ph/" className="nav-link">BLOG</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link">ABOUT</a>
+                      <Link prefetch href="/about" passHref>
+                        <a className={`nav-link ${this.setActive("/about")}`}>ABOUT</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link">EVENTS</a>
+                      <Link prefetch href="/events" passHref>
+                        <a className={`nav-link ${this.setActive("/events")}`}>EVENTS</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link">CONTACTS</a>
+                      <Link prefetch href="/contact" passHref>
+                        <a className={`nav-link ${this.setActive("/contact")}`}>CONTACT</a>
+                      </Link>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link space"></a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingBottom:'13px'}}>
                       <a className="btn login-button" target="_blank" href="https://secure.unified.ph">Login</a>
                     </li>
                   </ul>
@@ -74,4 +94,4 @@ class TopNavigation extends React.Component{
   }
 }
 
-export default TopNavigation
+export default withRouter(TopNavigation)
