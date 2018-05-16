@@ -1,0 +1,27 @@
+html, body{
+  font-family: 'Roboto', sans-serif !important;
+  color:#666666 !important;
+}
+@font-face {
+  font-family: 'DharmaGothicLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/static/fonts/dharma-ghotic/DharmaGothicE_Light_I.otf') format('truetype');
+}
+.border{
+  border: 3px solid blue !important;
+}
+.default-color{
+  color:#3d5fac !important;
+}
+.bg-u-dark{
+  background-color: #191D21 !important;
+}
+.btn-transparent-circular{
+  background-color: transparent;
+  border:1px solid #ffffff !important;
+  padding: 5px 50px !important;
+  color: #ffffff !important;
+  border-radius: 25px !important;
+  font-weight: 200 !important;
+}

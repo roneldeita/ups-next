@@ -1,7 +1,10 @@
 import React from 'react'
 import Layout from '../components/template/Layout'
 import Banner from '../components/home/Banner'
-import css from '../static/css/banner.css'
+import WhyUnified from '../components/home/WhyUnified'
+import Partners from '../components/home/Partners'
+import Bentanayan from '../components/home/Bentanayan'
+import GetMobilApp from '../components/home/GetMobileApp'
 
 export default class extends React.Component{
   static async getInitialProps({ req, pathname, query, asPath }) {
@@ -12,9 +15,11 @@ export default class extends React.Component{
     console.log(this.props)
     return(
       <Layout>
-        <div className="cover home-cover">
-          <Banner/>
-        </div>
+        <Banner/>
+        <WhyUnified/>
+        <Partners/>
+        <Bentanayan/>
+        <GetMobilApp/>
       </Layout>
     )
   }

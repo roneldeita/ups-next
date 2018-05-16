@@ -3,10 +3,10 @@ import css from '../../static/css/banner.css'
 
 export default() => {
   return(
-    <div className="container">
-      <div className="row justify-content-md-center">
-        <div className="col-md-10">
-          <div className="products-and-services-container">
+    <div className="cover products-and-services-cover">
+      <div className="container">
+        <div className="row justify-content-md-center">
+          <div className="col-md-10">
             <p className="slogan slogan-products-and-services">
               The customer experience is <br/>
               the next competitive battleground.

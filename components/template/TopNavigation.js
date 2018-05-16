@@ -81,7 +81,7 @@ class TopNavigation extends React.Component{
                       <a className="nav-link space"></a>
                     </li>
                     <li className="nav-item" style={{paddingBottom:'13px'}}>
-                      <a className="btn login-button" target="_blank" href="https://secure.unified.ph">Login</a>
+                      <a className="btn login-button" rel="noopener noreferrer"  target="_blank" href="https://secure.unified.ph">Login</a>
                     </li>
                   </ul>
                 </div>
