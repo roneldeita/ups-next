@@ -11,30 +11,34 @@ class TopNavigation extends React.Component{
       navClass:"navbar-default",
       toggleIcon:"fas fa-chevron-down"
     }
+    this.handleScroll = this.handleScroll.bind(this)
   }
   componentDidMount(){
-    window.addEventListener('scroll', this.handleScroll.bind(this))
+    window.addEventListener('scroll', this.handleScroll)
     jQ('#navbar-collapse>.navbar-nav>li>a').on('click', function(){
       if(jQ(window).width() <= 768) {
         jQ('.navbar-toggler').click()
       }
     })
-    let parent = this;
-    jQ('.navbar-toggler').on('click', function(){
+    jQ('.navbar-toggler').on('click', () => {
       const State = jQ('.navbar-collapse').hasClass('show')
       const Class = State ? "fas fa-chevron-down" : "fas fa-chevron-up"
-      parent.setState({toggleIcon:Class})
+      this.setState({toggleIcon:Class})
     })
   }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
   handleScroll(){
-    var scroll = window.pageYOffset;
-    const Navclass = scroll <= 50 ? 'navbar-default' : 'navbar-default-active';
-    this.setState({navClass:Navclass})
+    var scroll = window.pageYOffset
+    const Navclass = scroll <= 50 ? 'navbar-default' : 'navbar-default-active'
+    this.state.navClass !== Navclass ? this.setState({navClass:Navclass}) : ''
   }
   setActive(path){
     return path === this.props.router.pathname ? 'active' : ''
   }
   render(){
+    //console.log(this.props)
     return(
       <div className={`container-fluid fixed-top ${this.state.navClass}`}>
         <div className="container">
@@ -75,6 +79,11 @@ class TopNavigation extends React.Component{
                     <li className="nav-item">
                       <Link prefetch href="/contact" passHref>
                         <a className={`nav-link ${this.setActive("/contact")}`}>CONTACT</a>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link prefetch href="/gallery" passHref>
+                        <a className={`nav-link ${this.setActive("/media")}`}>GALLERY</a>
                       </Link>
                     </li>
                     <li className="nav-item">

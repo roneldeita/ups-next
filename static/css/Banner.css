@@ -19,6 +19,9 @@
 .contact-cover{
   background-image: url('/static/images/Contact_Header.png');
 }
+.gallery-cover{
+  background-image: url('/static/images/Travel_and_Tours.png');
+}
 .slogan{
   font-size: 60px;
   line-height: 60px;

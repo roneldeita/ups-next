@@ -25,3 +25,11 @@ html, body{
   border-radius: 25px !important;
   font-weight: 200 !important;
 }
+.btn-download{
+  background-color: transparent;
+  border:1px solid #1F354F !important;
+  color: #1F354F !important;
+  font-weight: 500 !important;
+  border-radius: 25px !important;
+  padding: 5px 8px !important;
+}

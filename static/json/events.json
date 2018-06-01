@@ -1,0 +1,74 @@
+[
+  {
+    "id":0,
+    "img": "1.jpg",
+    "title": "UPS: Dominating The Future",
+    "short_desc": "Function Room 1, SMX Manila, Mall of Asia.",
+    "date" : "June 25, 2016"
+  },
+  {
+    "id":1,
+    "img": "2.jpg",
+    "title": "UPS: We Are One 4th Anniversary",
+    "short_desc": "Terros Hall, AFP Commissioned Officers Club, Camp Aguinaldo, Quezon City.",
+    "date" : "December 5, 2015"
+  },
+  {
+    "id":2,
+    "img": "3.jpg",
+    "title": "UPS: ECash Cardless Padala",
+    "short_desc": "UPS promo for everyone where youcan get cash 24/7 through any Security Bank ATM without using card.",
+    "date" : "2015"
+  },
+  {
+    "id":3,
+    "img": "4.jpg",
+    "title": "UPS: Anniversary in U.A.E",
+    "short_desc": "Ayla Hotel Al Ain, U.A.E",
+    "date" : "July 24, 2015"
+  },
+  {
+    "id":4,
+    "img": "5.jpg",
+    "title": "UPS: Palawan Travel Incentives",
+    "short_desc": "Go to any UPS branches to get this incentives or log in and visit your account now!",
+    "date" : "2015"
+  },
+  {
+    "id":5,
+    "img": "6.jpg",
+    "title": "UPS: Mid Year Rally",
+    "short_desc": "AFP Commissioned Officers Club, Bulwagang Tajeros, Camp Aguinaldo, Quezon City.",
+    "date" : "June 27, 2015"
+  },
+  {
+    "id":6,
+    "img": "7.jpg",
+    "title": "UPS: Soaring High Big O.N.E Hong Kong Leaders Training",
+    "short_desc": "The HK bayanihan Trust, Bayanihan Kennedy Town Centre #55 Victoria Road.",
+    "date" : "July 6, 2014"
+  },
+  {
+    "id":7,
+    "img": "8.jpg",
+    "title": "UPS: We Are Unified! O.N.E",
+    "short_desc": "Nelims Bldg. Beside Pizzro",
+    "date" : "June 21, 2014"
+  },
+  {
+    "id":8,
+    "img": "9.jpg",
+    "title": "Test2",
+    "title": "UPS: 10,000k Ecah Challenge",
+    "short_desc": "Read the mechanics to win the 10,000k Ecash challenge now!",
+    "date" : "March 6 to June 25, 2014"
+  },
+  {
+    "id":9,
+    "img": "10.png",
+    "title": "UPS: Asenso Tercer Distrito Local and Overseas Job Fair",
+    "short_desc": "Big Dome of The South",
+    "date" : "March 7 to March 8, 2014"
+  }
+
+]

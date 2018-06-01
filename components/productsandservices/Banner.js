@@ -11,7 +11,7 @@ export default() => {
               The customer experience is <br/>
               the next competitive battleground.
             </p>
-            <button className="btn btn-signup-circular" onClick={() => Router.push('/about')}>SIGN UP NOW AND BE OUR PARTNER!</button>
+            <button className="btn btn-signup-circular" onClick={() => Router.push({pathname:'/contact', query:{scroll: 'support'}})}>SIGN UP NOW AND BE OUR PARTNER!</button>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import TopNavigation from './TopNavigation'
+import BottomNavigation from './BottomNavigation'
 import Head from 'next/head'
 import '../../static/css/app.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,6 +17,7 @@ export default (props) => {
       <div>
         <TopNavigation/>
         {props.children}
+        <BottomNavigation/>
       </div>
     </div>
   )

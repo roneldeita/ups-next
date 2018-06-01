@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "area" : "NCR",
+    "offices":[
+      {
+        "short_name": "Parañaque Hub",
+        "long_name": "Parañaque Hub - Atlas Remittance Center",
+        "address": "Parañaque 10A Presidents Avenue, Bf Homes, Teoville, Paranaque City District Iv"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "area" : "LUZON",
+    "offices":[
+      {
+        "short_name": "Santiago Hub",
+        "long_name": "Santiago Hub - A Synergy Business Hub",
+        "address": "Fourlanes Street, Brgy. Villasis, Santiago City."
+      },
+      {
+        "short_name": "Gonzaga Hub",
+        "long_name": "Gonzaga Hub - CFPJ Remittance And Ticketing Center",
+        "address": "1st Floor Garma Bldg., Adduru St., Paradise, Gonzaga Cagayan, 3513"
+      },
+      {
+        "short_name": "Angeles Hub",
+        "long_name": "Angeles Hub - Econpay Remittance Services",
+        "address": "Unit-O Pedana Plaza Lot 516 Burgos,St. Agapito Del Rosario Angeles City Pampanga"
+      },
+      {
+        "short_name": "Dasmariñas Hub",
+        "long_name": "Dasmariñas Hub - Viajedor Remittance",
+        "address": "Blk 6 L01 San Lorenzo Ruiz, Dbbe Cavite, Dasma"
+      },
+      {
+        "short_name": "Naga Hub",
+        "long_name": "Naga Hub - FKA Exchange & Remittance Services",
+        "address": "34-D De Castro Bldg. Barlin St. 4400 Naga City"
+      },
+      {
+        "short_name": "Palawan Hub",
+        "long_name": "Palawan Hub - Lucky Peacock Travel And Tours",
+        "address": "#44 Baltan St. Brgy San Miguel Puerto Princesa Palawan 5300"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "area" : "VISAYAS",
+    "offices":[
+      {
+        "short_name": "Bacolod Hub",
+        "long_name": "Bacolod Hub - Rhadz Bills Payments & Remittance Center",
+        "address":"Yulo- Quezon Sts Brgy 36 Bacolod City"
+      },
+      {
+        "short_name": "La Carlota Hub",
+        "long_name": "La Carlota Hub",
+        "address":"La Carlota Yunque St. Agora Market, La Carlota City, Negros Occ"
+      },
+      {
+        "short_name": "Ilo-Ilo Hub",
+        "long_name": "Ilo-Ilo Hub - Pronto! Retail Remittance And Service Co.",
+        "address":"Corner Fuentes De Leon Street, Brgy. Gloria, Ilo-Ilo City"
+      },
+      {
+        "short_name": "Tagbilaran 2 Hub",
+        "long_name": "Tagbilaran 2 Hub - Rabbit Foot Travel & Tours",
+        "address":"0156 Gallares St., Pob Ii, Tasgb. City"
+      },
+      {
+        "short_name": "Tacloban Hub",
+        "long_name": "Tacloban Hub - Adora Business Center",
+        "address":"Door 1 Ocañada Bldg. Kalipayan Road, Brgy. 62-B Tacloban City"
+      },
+      {
+        "short_name": "Kabankalan Hub",
+        "long_name": "Kabankalan Hub - Jrb Remittance Center",
+        "address":"Bry. 1 Tan Lorenzo St. Kabankalan City -In Front Of Gaisano City Kabankalan"
+      },
+      {
+        "short_name": "Kasibu Nueva Vizcaya",
+        "long_name": "Kasibu Nueva Vizcaya - Saint Patrick Parish M Ulti Purpose Coop",
+        "address":"Parish Compound Poblacion Kasibu Nueva Vizcaya"
+      },
+      {
+        "short_name": "La Trinidad Benguet Hub",
+        "long_name": "La Trinidad Benguet Hub - Majen Remittance Services",
+        "address":"Fa-146 Pineshill Business Center I, Balili"
+      },
+      {
+        "short_name": "Ormoc Leyte Hub",
+        "long_name": "Ormoc Leyte Hub",
+        "address":"Ormoc Leyte"
+      },
+      {
+        "short_name": "Talisay Hub",
+        "long_name": "Talisay Hub - GS Ticketing & Remittance Services",
+        "address":"Talisay, Cebu Region 7 (Central Visayas)"
+      },
+      {
+        "short_name": "Tuguegarao Hub",
+        "long_name": "Tuguegarao Hub",
+        "address":"Tuguegarao"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "area" : "MINDANAO",
+    "offices":[
+      {
+        "short_name": "Zamboanga Hub",
+        "long_name": "Zamboanga Hub - C J Rivero Enterprises",
+        "address": "138 San Jose, Gusu, Zamboanga City"
+      },
+      {
+        "short_name": "Cagayan De Oro Hub",
+        "long_name": "Cagayan De Oro Hub - Voyagers Business Hub",
+        "address": "Voyager's Arcade, Tiano Brother's St., Cagayan De Oro"
+      },
+      {
+        "short_name": "Bayugan Hub",
+        "long_name": "Bayugan Hub - Svb Sanbar Trading, Inc.",
+        "address": "Esperanza Road, Bayugan, Agusan Del Sur"
+      },
+      {
+        "short_name": "Cotabato Hub",
+        "long_name": "Cotabato Hub - Soul Remittance & Bills Services",
+        "address": "#036 Bishop Gerald M Ongeau Avenue , Coatabato City"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "area" : "INTERNATIONAL",
+    "offices":[
+      {
+        "short_name": "Doha Qatar",
+        "long_name": "Doha Qatar - Vital Enterprises Wll (International)",
+        "address": "Po Box 2000237 4th Floor Dar As Salam Building., Top Of Al- Zaman Exchange Beside Al Fardan Complex, Alashat Street Old Al-Ghanem, Doha, Qatar"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "area" : "INTERNATIONAL OFFICE",
+    "offices":[
+      {
+        "short_name": "Hong Kong",
+        "long_name": "Hong Kong",
+        "address": "15/F Chang Pao Ching Building, #427-429 Hennessy Road, Causeway Bay, Hong Kong Trunkline: (852) 21533535"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "area" : "UPS CORPORATE OFFICE",
+    "offices":[
+      {
+        "short_name": "Quezon Avenue Office",
+        "long_name": "Quezon Avenue Office",
+        "address": "Jr Bldg Mezzanin Floor, Brgy. South Triangle, Quezon Ave., Quezon City",
+        "contact1": "UPS Landline: 373-1215",
+        "contact2": "SMART: 0929-777-6855",
+        "contact3": "GLOBE: 0926-672-2072",
+        "contact4": "SUN: 0942-460-5544"
+      },
+      {
+        "short_name": "Cebu Office",
+        "long_name": "Cebu Office",
+        "address": "Ground Floor Rafael Yu Bldg. Gen. Maxilom Avenue, Cebu City",
+        "contact1": "Landline: (032) 254-0090",
+        "contact2": "Cellphone: 0923-133-6322"
+      },
+      {
+        "short_name": "Davao Office",
+        "long_name": "Davao Office",
+        "address": "Hrtv Corp. Building, Bolton St., Brgy. 3, Davao City",
+        "contact1": "Landline: (082) 222-3644",
+        "contact2": "Cellphone: 0919-819-0224"
+      }
+    ]
+  }
+]

@@ -1,10 +1,8 @@
 import Layout from '../components/template/Layout'
-import Banner from '../components/about/Banner'
-import History from '../components/about/History'
+import Banner from '../components/gallery/Banner'
 
 export default () => (
   <Layout>
     <Banner/>
-    <History/>
   </Layout>
 )

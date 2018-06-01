@@ -41,12 +41,12 @@ const FounderRole = {
   fontWeight:300
 }
 const hoverImage = (event) => {
-  const color = event.target.getAttribute('data-colored')
-  event.target.setAttribute('src', color)
+  const color = event.currentTarget.getAttribute('data-colored')
+  event.currentTarget.setAttribute('src', color)
 }
 const resetImage = (event) => {
-  const def = event.target.getAttribute('data-default')
-  event.target.setAttribute('src', def)
+  const def = event.currentTarget.getAttribute('data-default')
+  event.currentTarget.setAttribute('src', def)
 }
 
 export default() => {

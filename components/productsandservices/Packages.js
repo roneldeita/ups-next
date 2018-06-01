@@ -1,3 +1,7 @@
+import React from 'react'
+import { animateScroll } from 'react-scroll'
+import { withRouter } from 'next/router'
+
 const Head = {
   color: '#1F354F',
   fontWeight:300,
@@ -111,38 +115,49 @@ const rederPackageModal = (data)=>{
     </div>
   )
 }
-export default() => (
-  <div className="container">
-    <h1 className="text-center" style={Head}>Exclusive package deals for you</h1>
-    <div className="row justify-content-md-center text-center">
-      <div className="col-md-6">
-        <img src="/static/images/Global_Dealer_Icon-01.png" alt="Global dealer icon" style={DealerIcon}/>
-        <p style={Title}>Global Dealer Package</p>
-        <p style={Sub}>Php 14,998</p>
-        <button className="btn btn-transparent-circular" style={Button}  data-toggle="modal" data-target="#global-package">
-          <div style={ButtonInside}>See Details</div>
-        </button>
-        { rederPackageModal('global-package') }
+class Packages extends React.Component{
+  componentDidMount(){
+    if(this.props.router.query.scroll === 'packages'){
+      animateScroll.scrollTo(550)
+    }
+  }
+  render(){
+    return(
+      <div className="container">
+        <h1 className="text-center" style={Head}>Exclusive package deals for you</h1>
+        <div className="row justify-content-md-center text-center">
+          <div className="col-md-6">
+            <img src="/static/images/Global_Dealer_Icon-01.png" alt="Global dealer icon" style={DealerIcon}/>
+            <p style={Title}>Global Dealer Package</p>
+            <p style={Sub}>Php 14,998</p>
+            <button className="btn btn-transparent-circular" style={Button}  data-toggle="modal" data-target="#global-package">
+              <div style={ButtonInside}>See Details</div>
+            </button>
+            { rederPackageModal('global-package') }
+          </div>
+          <div className="col-md-6">
+            <img src="/static/images/Pinoy_Dealer_Icon-01.png" alt="Global dealer icon" style={DealerIcon}/>
+            <p style={Title}>Global Dealer Package</p>
+            <p style={Sub}>Php 7,998</p>
+            <button className="btn btn-transparent-circular" style={Button} data-toggle="modal" data-target="#local-package">
+              <div style={ButtonInside}>See Details</div>
+            </button>
+            { rederPackageModal('local-package') }
+          </div>
+          <div className="col-md-10 text-left">
+            <p style={Note}>
+              <i>Note: Insurance Coverage is good only for one-time coverage.
+              In case of multiple heads, multiple coverage is Not allowed.
+              Should the dealer is already insured,
+              he/she maybe opt to insure other relatives
+              (within the 4th degree by consanguinity or affinity)
+               or sell the insurance coverage.</i>
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="col-md-6">
-        <img src="/static/images/Pinoy_Dealer_Icon-01.png" alt="Global dealer icon" style={DealerIcon}/>
-        <p style={Title}>Global Dealer Package</p>
-        <p style={Sub}>Php 7,998</p>
-        <button className="btn btn-transparent-circular" style={Button} data-toggle="modal" data-target="#local-package">
-          <div style={ButtonInside}>See Details</div>
-        </button>
-        { rederPackageModal('local-package') }
-      </div>
-      <div className="col-md-10 text-left">
-        <p style={Note}>
-          <i>Note: Insurance Coverage is good only for one-time coverage.
-          In case of multiple heads, multiple coverage is Not allowed.
-          Should the dealer is already insured,
-          he/she maybe opt to insure other relatives
-          (within the 4th degree by consanguinity or affinity)
-           or sell the insurance coverage.</i>
-        </p>
-      </div>
-    </div>
-  </div>
-)
+    )
+  }
+}
+
+export default withRouter(Packages)

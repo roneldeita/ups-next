@@ -19,7 +19,7 @@ export default() => (
         <button
           className="btn btn-transparent-circular"
           style={Button}
-          onClick={() => Router.push('/products-and-services')}>See Unified Packages</button>
+          onClick={() => Router.push({pathname:'/products-and-services', query:{scroll: 'packages'}})}>See Unified Packages</button>
       </div>
       <div className="col-md-3 text-center">
         <img src="/static/images/UPS_Mobile.png" alt="Unified mobile" className="img" style={{maxWidth:'80%'}}/>

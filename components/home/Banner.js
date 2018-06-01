@@ -1,5 +1,6 @@
 import Router from 'next/router'
 import css from '../../static/css/banner.css'
+import { Link } from 'react-scroll'
 
 export default() => {
   return(
@@ -20,7 +21,9 @@ export default() => {
                 attaining financial freedom through
                 our one-stop-shop business.
               </p>
-              <button className="btn btn-transparent-circular" onClick={() => Router.push('/about')}>Learn More</button>
+              <Link to="info" smooth={true} offset={-80}  duration={800}>
+                <button className="btn btn-transparent-circular">Learn More</button>
+              </Link>
             </div>
           </div>
           <div className="col-md-5">
